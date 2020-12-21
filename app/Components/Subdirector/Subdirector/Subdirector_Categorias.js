@@ -1,12 +1,12 @@
 import React from "react";
 import { StyleSheet, View, ScrollView, Alert,TouchableOpacity } from "react-native";
 import {  ListItem, Icon } from "react-native-elements";
+import { useNavigation } from "@react-navigation/native";
 
-
-export default function GestPers_ListPers() {
-
+export default function Subdirector_Categorias() {
+  const navigation = useNavigation();
   return (
-    <ScrollView centerContent={true} style={styles.viewBody}>
+  <ScrollView style={styles.ScrollviewBody}>
  {list.map((item, i) => (
       <TouchableOpacity onPress = {() => alertItemName(item)}>
        <ListItem key={i} bottomDivider>
@@ -18,21 +18,24 @@ export default function GestPers_ListPers() {
         </ListItem>
         </TouchableOpacity>
       ))}
-    </ScrollView>
+     </ScrollView>
   );
+
 }
 
 const alertItemName = (item) => {
-  Alert.alert(item.title+"\n actualizar  borrar ")
+
+  alert(item.title+"\n actualizar  borrar ")
+
 }
 
 
 
 const styles = StyleSheet.create({
-  viewBody: {
+  ScrollviewBody: {
     marginLeft: 0,
     marginRight: 0,
-    marginTop: 20,
+    marginTop: 0,
     marginBottom: 200,
 
   }
@@ -40,6 +43,26 @@ const styles = StyleSheet.create({
 
 
 const list = [
+    {
+      title: "Ciclismo Ruta 1",
+      icon: "bike"
+    },
+    {
+      title: "Brigada de Ecología 2",
+      icon: "biathlon"
+    },
+    {
+      title: "Taller de lectura 3",
+      icon: "book-open-variant"
+    },
+    {
+      title: "Brigada de Rescate 4",
+      icon: "hospital-box"
+    },
+    {
+      title: "Basquet ball 5",
+      icon: "tennis-ball"
+    },
     {
       title: "Ciclismo Ruta 1",
       icon: "bike"

@@ -21,13 +21,14 @@ export default function Subdirector_Boton() {
 
 const styles = StyleSheet.create({
    btnAddMaestro: {
-   marginBottom: 5
+   marginBottom: 25
   },
   btnStyle: {
     backgroundColor: "#CA6F1E"
   },
   btnContainer: {
-    width: "80%"
+    width: "80%",
+    marginBottom: 25
   },
   viewBtn: {
     

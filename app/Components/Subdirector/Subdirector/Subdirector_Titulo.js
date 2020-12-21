@@ -3,7 +3,7 @@ import { Text,StyleSheet,View } from "react-native";
 
 
 
-export default function IAListAsist_Titulo() {
+export default function Subdirector_Titulo() {
   return (
     
     <View>
